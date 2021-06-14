@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Pair-game</title>
+</head>
+<body>
+    <div class="game_field">
+        <!-- <h2>Игровое поле</h2> -->
+        <p id="conditions"></p>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <h1>Игра "Пары"</h1>
+            <p>Вы, вполне вероятно, с ней уже сталкивались в том или ином виде в настольных или видеоиграх. Игрок видит квадратное поле из карточек, расположенных "рубашкой" вверх, и находит пары одинаковых карточек, открывая их в произвольном порядке. На открытых карточках могут быть картинки, буквы, цифры, пиктограммы и что угодно ещё. Игрок открывает сначала одну карточку, затем вторую. Если обе открытые карточки одинаковы, они остаются открытыми до конца партии. В противном случае они переворачиваются обратно.</p>
+            <p id="rules">Прежде чем начать новую партию необходимо выбрать размер поля. Обратите внимание, что <u>количества рядов и колонок должны быть чётными в пределах от 2ух до 10ти</u>. Введите размер поля: </p>
+            <form name="form" action="post" id="welcome_form">
+                <p><label for="rows">Количество рядов:</label>
+                <input type="number" name="rows" id="rows" min="2" max="10" step="2" required value=4></p>
+                <p><label for="columns">Количество колонок:</label>
+                <input type="number" name="columns" id="columns" min="2" max="10" step="2" required value=4></p>
+                <input type="submit" value="Начать партию" id="start">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
